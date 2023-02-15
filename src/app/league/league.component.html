@@ -1,0 +1,6 @@
+<div class="home-container" fxLayout="column" fxLayoutAlign="start center">
+  <app-search (item)="getSearchValue($event)"></app-search>
+  <!-- <app-league></app-league> -->
+  <app-league-list [teams]="teams"></app-league-list>
+</div>
+

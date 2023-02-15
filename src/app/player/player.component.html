@@ -1,0 +1,10 @@
+<div class="player-container" fxLayout="row" fxLayoutAlign="start start">
+  <img [src]="player?.thumbnail" alt="" srcset="">
+
+  <div class="player-details" fxLayout="column" fxLayoutAlign="start start" fxFlex="1 0 0" fxLayoutGap="20px">
+    <span class="name">{{player?.name}}</span>
+    <span class="role">{{player?.position}}</span>
+    <span class="date">{{player?.born | date:'yyyy-MM-dd'}}</span>
+    <span class="price">{{player?.signin?.amount | currency: player?.signin?.currency?.toUpperCase() }}</span>
+  </div>
+</div>

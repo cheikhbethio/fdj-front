@@ -1,0 +1,13 @@
+<div class="search" fxLayout="row" fxLayoutAlign="space-between  center">
+
+  <div class="btn-container" fxLayout="row" fxLayoutAlign="center center" (click)="ok()">
+    <mat-icon class="search-btn">search</mat-icon>
+  </div>
+
+  <mat-form-field fxLayout="column" fxFlex="1 0 0">
+    <mat-label>Search by league</mat-label>
+    <input matInput [(ngModel)]="data">
+  </mat-form-field>
+  
+  <span (click)="cancel()" class="cancel" fxLayout="row" fxLayoutAlign="center center">Cancel</span>
+</div>

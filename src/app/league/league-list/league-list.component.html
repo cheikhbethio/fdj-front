@@ -1,0 +1,7 @@
+<div class="league-list" fxLayout="row wrap"  fxFlexAlign="start start">
+  
+  <div class="img-container" *ngFor="let team of teamsToDisplay" fxLayoutGap="20px">
+    <img [src]="team.thumbnail"  [routerLink]="['/team', team._id ]"/>
+  </div>
+  
+</div>
